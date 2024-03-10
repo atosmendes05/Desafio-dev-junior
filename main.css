@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto, sans-serif;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.lista {
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, #ffffff, #f0f0f0);
+    display: grid;
+    grid-template-columns: 30% 70%;
+}
+
+
+.col-1 {
+    border-right: 1px solid rgba(0, 0, 0, 0.2);
+    text-align: center;
+    background-color: rgb(210, 10, 10);
+    color: #fff;
+}
+
+button {
+    font-size: 1em;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    width: 40%;
+    cursor: pointer;
+}
+
+.col-1 > div {
+    width: 90%;
+    margin: 0 auto;
+    text-align: start;
+}
+
+p {
+    font-size: 1em;
+    margin: 10px 0px;
+    padding: 8px;
+    font-weight: bold;
+    border: 1px solid black;
+}
+
+h2 {
+    font-size: 1.2em;
+    margin: 10px 0;
+    padding: 8px;
+    font-weight: bold;
+}
+
+
+.col-2 {
+    background-color: #e6e4e4;
+}
+
+h2 {
+    text-align: center;
+}
+
+ul {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4,22%);
+    gap: 2%;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+li {
+    list-style: none;
+    border-radius: 10px;
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+}
+
+li h4 {
+    padding: 10px 0px;
+    font-size: 1em;
+}
+
+.btn-deleta {
+    background-color: #c0392b;
+}
+
+.btn-deleta:hover  {
+    background-color:  #a22011;
+    transition: all ease .3s;
+    transform: scale(1.2);
+}
+
+.btn-editar {
+    background-color: #2980b9;
+}
+
+.btn-editar:hover {
+    background-color: #1674b3;
+    transition: all ease .3s;
+    transform: scale(1.2);
+}
+
+
+.selecionado {
+    border: 2px solid #4CAF50;
+    box-shadow: 0px 0px 5px 2px rgba(129, 199, 132, 0.7);
+}
+
+
+.avata-icon {
+    width: 50%;
+    border-radius: 50%;
+    background-color: #eee;
+}
+
+@media screen and (max-width: 767px) {
+    .col-2 ul {
+        grid-template-columns: repeat(2,49%);
+        gap: 2%;
+    }
+
+    .lista {
+        grid-template-columns: 40% 60%;
+    }
+
+    .col-1 > div > p {
+        padding: 2px;
+    }
+}
+
+@media screen and (max-width: 390px){
+    .col-2 ul {
+        grid-template-columns: repeat(1,98%);
+        gap: 2%;
+        height: 10%;
+    }
+
+    .lista {
+        grid-template-columns: 50% 50%;
+    }
+}
