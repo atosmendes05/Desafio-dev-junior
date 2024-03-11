@@ -125,6 +125,17 @@ li h4 {
     background-color: #eee;
 }
 
+
+
+@media screen and (max-width: 1024px) {
+
+    .col-2 ul {
+        grid-template-columns: repeat(3,30%);
+        gap: 2%;
+    }
+}
+
+
 @media screen and (max-width: 767px) {
     .col-2 ul {
         grid-template-columns: repeat(2,49%);
@@ -140,7 +151,7 @@ li h4 {
     }
 }
 
-@media screen and (max-width: 390px){
+@media screen and (max-width: 446px){
     .col-2 ul {
         grid-template-columns: repeat(1,98%);
         gap: 2%;
