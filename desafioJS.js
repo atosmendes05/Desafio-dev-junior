@@ -13,7 +13,7 @@ function procurarUsuario(usuarios, valor) {
     });
 }
 
-let usuarios = [
+const usuarios = [
     { nome: 'Atos', idade: 22, email: 'atos@exemplo.com' },
     { nome: 'Geovanna', idade: 19, email: 'geovanna@exemplo.com' },
     { nome: 'Neto', idade: 62, email: 'neto@exemplo.com' }
